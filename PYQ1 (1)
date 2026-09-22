@@ -1,1 +1,17 @@
-{"nbformat":4,"nbformat_minor":0,"metadata":{"colab":{"provenance":[],"authorship_tag":"ABX9TyNPhauVjdd6Vhouw4p/J/IV"},"kernelspec":{"name":"python3","display_name":"Python 3"},"language_info":{"name":"python"}},"cells":[{"cell_type":"code","execution_count":3,"metadata":{"colab":{"base_uri":"https://localhost:8080/"},"id":"EYm1Ac0pV5Xw","executionInfo":{"status":"ok","timestamp":1790053812755,"user_tz":-330,"elapsed":17803,"user":{"displayName":"Jothikrishnan Jothikrishnan","userId":"10122133373391021243"}},"outputId":"76b634d1-630a-4ad0-8379-3d4bab261d28"},"outputs":[{"output_type":"stream","name":"stdout","text":["enter the number of monkeys20\n","enter the number of eatable banana2\n","enter the number of eatable peanut3\n","enter the number of banana12\n","enter the number of peanut12\n","number of monkeys in the tree 10\n"]}],"source":["n=int(input(\"enter the number of monkeys\"))\n","k=int(input(\"enter the number of eatable banana\"))\n","j=int(input(\"enter the number of eatable peanut\"))\n","m=int(input(\"enter the number of banana\"))\n","p=int(input(\"enter the number of peanut\"))\n","if k==0 or j==0:\n","  print(\":it is invalid\")\n","else:\n","  n=n-(m//k+p//j)\n","  if m%k!=0 or p%j!=0:\n","    n-n-1\n","  print(\"number of monkeys in the tree\",n)\n","\n"]},{"cell_type":"code","source":["j=int(input(\"enter the first number\"))\n","k=int(input(\"enter the second number\"))\n","print(\"Using kin\")\n","kin=j\n","j=k\n","k=kin\n","print(\"j=\",j)\n","print(\"k=\",k)\n","print(\"Using ,\")\n","j,k=k,j\n","print(\"j =\", j)\n","print(\"k =\", k)\n","print(\"Using + and -\")\n","j=j+k\n","k=j-k\n","j=j-k\n","print(\"j =\", j)\n","print(\"k =\", k\n","print(\"Using ^\")\n","j=j^k\n","k=j^k\n","j=j^k\n","print(\"j =\", j)\n","print(\"k =\", k)\n"],"metadata":{"id":"9-6lDlmviLVf","executionInfo":{"status":"ok","timestamp":1790059441246,"user_tz":-330,"elapsed":97,"user":{"displayName":"Jothikrishnan Jothikrishnan","userId":"10122133373391021243"}}},"execution_count":3,"outputs":[]}]}
+n=int(input("Enter jar capacity:"))
+k=int(input("Enter min candies:"))
+t=n
+i='y'
+ts=0
+while i !='n':
+  x=int(input("Enter candies to sold:"))
+  if x>n:
+    print("Invalid input")
+  else:
+    n=n-x
+    ts=ts+x
+    print("Sold:",x)
+    if n<=k:
+      n=t
+    print("Available candies:",n)
+    print("Total sold",ts)
