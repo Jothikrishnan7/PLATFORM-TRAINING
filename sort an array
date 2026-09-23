@@ -1,0 +1,7 @@
+st=[]
+x=int(input("Enter limit:"))
+for i in range(0,x):
+  lst.append(int(input("Enter items:")))
+print(lst)
+lst.sort()
+print(lst)
