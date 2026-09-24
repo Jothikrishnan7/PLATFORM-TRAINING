@@ -1,0 +1,7 @@
+N = int(input("enter the number"))
+V = list(map(int, input(" bunch of values as array").split()))
+n = int(input("number of spikes"))
+result = []
+for x in V:
+    result.append(x >> n)
+print("Result:",*result
