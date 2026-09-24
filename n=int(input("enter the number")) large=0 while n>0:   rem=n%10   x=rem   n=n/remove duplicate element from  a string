@@ -1,0 +1,6 @@
+a=input("Enter string: ")
+b=""
+for i in a:
+    if i not in b:
+        b+=i
+print("After removing duplicates: ",b)
