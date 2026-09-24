@@ -1,0 +1,6 @@
+s=input("Enter a string: ")
+count=0
+for I in s:
+ count+=1
+ print("Total characters without built in",count)
+ print("Total characters with built in",len(s))
