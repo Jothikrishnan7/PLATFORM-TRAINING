@@ -1,0 +1,9 @@
+n=int(input("enter the no"))
+an=int(input("enter the no:"))
+binary=bin(n)[2:]
+print(binary)
+print("toggled->")
+toggle="".join('1' if bit=='0' else '0' for bit in binary)
+print(toggle)
+i=int(toggle,2)
+print(i)
