@@ -1,5 +1,4 @@
 n=int(input("enter the no"))
-an=int(input("enter the no:"))
 binary=bin(n)[2:]
 print(binary)
 print("toggled->")
